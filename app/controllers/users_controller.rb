@@ -9,7 +9,6 @@ class UsersController < ApplicationController
   end
 
   def likes
-  	@user = User.find(params[:id])
-  	@likes = @user.liked_photos
+    @likes = current_user.liked_photos
   end
 end

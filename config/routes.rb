@@ -116,7 +116,7 @@ Rails.application.routes.draw do
   # READ
   get "/users", :controller => "users", :action => "index"
   get "/users/:id", :controller => "users", :action => "show"
-  get "/users/:id/my_likes", :controller => "users", :action => "likes"
+  get "/my_likes", :controller => "users", :action => "likes"
   #------------------------------
 
 
