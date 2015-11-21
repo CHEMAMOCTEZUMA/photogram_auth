@@ -16,6 +16,12 @@
 
     </dl>
 
+    <% #copy new comment form and paste... fix all things that don't match or have an error
+        #prepopulate and hide the values that don't need to be shown
+        #take the action to stay in the same page in controllers set redirect to ":back"
+        #para favorites @photo.fans.pluck(:username).to_sentence
+        %>
+
     <div class="btn-group btn-group-justified">
       <a href="/photos" class="btn btn-primary">
         Back
